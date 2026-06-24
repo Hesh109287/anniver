@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imesha ❤️ Damitha</title>
+
+<style>
+.gallery img,
+.gallery video {
+    width:100%;
+    max-width:none;
+    height:auto;
+    aspect-ratio:4 / 3;
+    object-fit:contain;
+    background:rgba(0,0,0,0.18);
+    border-radius:12px;
+    margin:0;
+}
+</style>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    min-height:100vh;
+    overflow-x:hidden;
+    text-align:center;
+    color:white;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.page{
+    background:rgba(255,255,255,0.18);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:25px;
+    margin:25px 0;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    font-size:3rem;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+img{
+    width:100%;
+    max-width:700px;
+    height:auto;
+    border-radius:15px;
+    margin:10px auto;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:flex-start;
+    gap:14px;
+}
+
+.gallery > img{
+    flex:0 1 calc(50% - 7px);
+    width:calc(50% - 7px);
+}
+
+.gallery > .page,
+.gallery > button,
+.gallery > #secretLetter,
+.gallery > div[onclick]{
+    flex:0 0 100%;
+}
+
+.gallery > video{
+    flex:0 1 820px;
+    width:min(100%,820px);
+    max-width:100%;
+    height:auto;
+    aspect-ratio:auto;
+    display:block;
+    margin:12px auto;
+}
+
+audio{
+    width:min(100%,500px);
+    margin:10px auto 20px;
+}
+
+#musicButton{
+    display:none;
+    margin:10px auto;
+}
+
+@media (max-width:600px){
+    .container{
+        padding:10px;
+    }
+
+    .page{
+        padding:16px;
+        margin:14px 0;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    .gallery{
+        gap:12px;
+    }
+
+    .gallery > img{
+        flex-basis:100%;
+        width:100%;
+    }
+
+    .gallery img,
+    .gallery video{
+        aspect-ratio:auto;
+    }
+}
+
+button{
+    background:#60a5fa;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+#letter{
+    display:none;
+    margin-top:20px;
+    line-height:1.8;
+}
+
+.heart{
+    position:fixed;
+    bottom:-10px;
+    animation:float 6s linear infinite;
+    font-size:20px;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Cover Page -->
+<div class="page">
+<h1>❤️ Imesha & Damitha ❤️</h1>
+<h2>Happy Anniversary</h2>
+<p>26 June 2025 - Forever ✨</p>
+</div>
+
+<!-- SONG -->
+<h2>your fav song </h2>
+<audio id="bgMusic" autoplay loop controls playsinline preload="auto">
+<source src="Music.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+<button id="musicButton" type="button" onclick="playMusic()">▶ Play Music</button>
+<!-- Memory Page 1 -->
+<div class="page">
+<h2>📸 Our First Memories(2025.07.05)</h2>
+
+<!-- PHOTO 1 -->
+<img src="Photo1.jpg" alt="Memory 1">
+
+<h2>📸</h2>
+<!-- PHOTO 2 -->
+<img src="Photo2.jpg" 
+alt="Memory 2">
+
+</div>
+
+<!-- Memory Page 2 -->
+<div class="page">
+<h2>🌸 Beautiful Moments</h2>
+
+<!-- PHOTO 3 -->
+<img src="Photo3.jpg" alt="Memory 3">
+
+<!-- PHOTO 4 -->
+<img src="Photo4.jpg" alt="Memory 4">
+
+</div>
+
+<!-- Gallery Page -->
+<div class="page">
+<h2>💕 Our Gallery</h2>
+
+<div class="gallery">
+
+<img src="Photo5.jpg">
+<img src="Photo6.jpg">
+<img src="Photo7.jpg">
+<img src="Photo8.jpg">
+<img src="Photo9.jpg">
+<img src="Photo10.jpg">
+<img src="Photo12.jpg">
+<video autoplay muted loop>
+    <source src="V1.mp4" type="video/mp4">
+</video>
+<img src="Photo14.jpg">
+<img src="Photo16.jpg">
+<img src="Photo17.jpg">
+<img src="Photo18.jpg">
+<img src="Photo19.jpg">
+<img src="Photo20.jpg">
+<img src="Photo21.jpg">
+
+<div class="page">
+<h2>💌 To Damitha</h2>
+
+<p>
+Thank you for the smiles,
+the support,
+the kindness,
+and the memories.
+
+You made this year more special than you probably realize.
+</p>
+
+</div>
+
+<video autoplay muted loop>
+    <source src="V2.mp4" type="video/mp4">
+</video>
+<img src="Photo23.jpg">
+<img src="Photo24.jpg">
+<img src="Photo25.jpg">
+<img src="Photo26.jpg">
+<img src="Photo27.jpg">
+<img src="Photo28.jpg">
+<img src="Photo29.jpg">
+<img src="Photo30.jpg">
+<img src="Photo31.jpg">
+
+<div class="page">
+<h2>🌟 Memory</h2>
+
+<p>
+A photo captures a moment,
+but the feeling behind it lasts forever.
+</p>
+
+</div>
+
+<img src="Photo32.jpg">
+<img src="Photo33.jpg">
+<img src="Photo34.jpg">
+<img src="Photo35.jpg">
+<img src="Photo36.jpg">
+<img src="Photo37.jpg">
+<video autoplay muted loop>
+    <source src="V3.mp4" type="video/mp4">
+</video>
+<img src="Photo39.jpg">
+<img src="Photo40.jpg">
+<img src="Photo41.jpg">
+<img src="Photo42.jpg">
+
+<div class="page">
+
+<h2>🔒 Secret Message</h2>
+
+<button onclick="showSecret()">
+Open Secret
+</button>
+
+<div id="secret" style="display:none; margin-top:20px;">
+
+<p>
+Dear Damitha,
+
+If you found this message, it means you took the time to explore every page.
+
+So here's a little secret...
+
+Out of all the memories in this website,
+my favorite part was creating it for you. 💙
+
+- Imesha 🌹
+</p>
+
+</div>
+
+</div>
+
+<script>
+function showSecret(){
+document.getElementById("secret").style.display="block";
+}
+</script>
+
+<img src="Photo44.jpg">
+<img src="Photo45.jpg">
+<img src="Photo46.jpg">
+<img src="Photo47.jpg">
+<img src="Photo48.jpg">
+<img src="Photo49.jpg">
+<img src="Photo50.jpg">
+
+<div class="page">
+<h2>✨ One Thing I Want You To Know ✨</h2>
+
+<p>
+No matter how busy life gets,
+I will always appreciate the memories we created together.
+
+Thank you for being part of my story.
+</p>
+
+</div>
+
+<img src="Photo51.jpg">
+<img src="Photo52.jpg">
+<img src="Photo53.jpg">
+<img src="Photo54.jpg">
+<img src="Photo55.jpg">
+<img src="Photo56.jpg">
+
+<div onclick="openGift()"
+style="font-size:70px;cursor:pointer;">
+🎁
+</div>
+
+<script>
+function openGift(){
+alert("🎉 Surprise! You are one of my favorite people.");
+}
+</script>
+
+<img src="57.jpg">
+<img src="58.jpg">
+<img src="59.jpg">
+<img src="60.jpg">
+<img src="61.jpg">
+<img src="62.jpg">
+
+<button onclick="showSecretLetter()">
+💌 Open Only If Curious
+</button>
+
+<div id="secretLetter" style="display:none;margin-top:20px;">
+
+<h3>🔒 Hidden Note</h3>
+
+<p>
+If you are reading this,
+it means you explored every corner of this website.
+
+That makes me smile. 😊
+
+Thank you for taking the time to look through all these memories.
+
+💙 - Imesha
+</p>
+
+</div>
+
+<script>
+function showSecretLetter(){
+document.getElementById("secretLetter").style.display="block";
+}
+</script>
+
+
+<video autoplay muted loop>
+    <source src="V4.mp4" type="video/mp4">
+</video>
+<img src="63.jpg">
+<img src="65.jpg">
+<img src="66.jpg">
+<img src="67.jpg">
+<img src="68.jpg">
+<video autoplay muted loop>
+    <source src="V8.mp4" type="video/mp4">
+</video>
+
+<div class="page">
+<h2>💙 A Small Note 💙</h2>
+
+<p>
+Some people come into our lives and leave footprints on our hearts.
+
+Thank you for being one of those people.
+
+Every conversation, every laugh, and every memory means more than you know.
+</p>
+
+</div>
+
+<img src="69.jpg">
+<img src="70.jpg">
+<img src="71.jpg">
+<img src="73.jpg">
+<img src="74.jpg">
+<img src="75.jpg">
+<img src="76.jpg">
+<video autoplay muted loop>
+    <source src="V5.mp4" type="video/mp4">
+</video>
+<img src="78.jpg">
+<video autoplay muted loop>
+    <source src="V6.mp4" type="video/mp4">
+</video>
+<img src="79.jpg">
+<img src="80.jpg">
+<img src="81.jpg">
+<img src="82.jpg">
+<img src="83.jpg">
+<video autoplay muted loop>
+    <source src="Vo.mp4" type="video/mp4">
+</video>
+
+</div>
+</div>
+
+<!-- Letter Page -->
+<div class="page">
+
+<h2>💌 A Letter For You</h2>
+
+<button onclick="showLetter()">
+Open My Letter sutii❤️
+</button>
+
+<div id="letter">
+
+<p>
+
+my love sutii,
+
+One year may seem like a short time,
+but every memory we created together
+has become very special to me.
+
+Thank you for the laughs,
+the support,
+the kindness,
+and all the unforgettable moments.
+
+No matter where life takes us,
+you will always have a special place in my heart.
+
+Happy Anniversary ❤️
+
+With Love,
+
+Imesha 🌹
+
+</p>
+
+</div>
+
+</div>
+
+<!-- Final Page -->
+<div class="page">
+<h2>✨ To Many More Memories Ahead ✨</h2>
+<div class="page">
+<h2>🌠 One Last Thing...</h2>
+
+<p>
+No matter what happens in the future,
+the memories we created together
+will always be special to me.
+
+Thank you for being part of my story.
+
+💙 Damitha 💙
+</p>
+
+</div>
+<h1>❤️ Forever ❤️</h1>
+</div>
+</div><!-- end container -->
+
+<script>
+
+const bgMusic=document.getElementById("bgMusic");
+const musicButton=document.getElementById("musicButton");
+
+function playMusic(){
+bgMusic.play().then(()=>{
+musicButton.style.display="none";
+}).catch(()=>{
+musicButton.style.display="inline-block";
+});
+}
+
+window.addEventListener("load",playMusic);
+document.addEventListener("click",()=>{
+if(bgMusic.paused) playMusic();
+},{once:true});
+
+function showLetter(){
+document.getElementById("letter").style.display="block";
+}
+
+setInterval(()=>{
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+
+},300);
+
+</script>
+
+</body>
+</html>

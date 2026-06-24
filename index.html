@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Anniversary ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:"Segoe UI",sans-serif}
+body{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;color:white;text-align:center;background:linear-gradient(135deg,#0f172a,#2563eb)}
+.login-card{width:min(100%,400px);padding:32px 22px;border:1px solid rgba(255,255,255,.25);border-radius:22px;background:rgba(255,255,255,.15);backdrop-filter:blur(12px);box-shadow:0 15px 40px rgba(0,0,0,.3)}
+h1{margin-bottom:10px;font-size:clamp(1.7rem,7vw,2.3rem)}
+p{margin-bottom:18px;color:#dbeafe}
+input{width:100%;padding:14px;border:2px solid transparent;border-radius:12px;outline:none;font-size:16px;text-align:center}
+input:focus{border-color:#93c5fd}
+button{width:100%;margin-top:12px;padding:13px;border:0;border-radius:12px;background:#60a5fa;color:white;font-size:17px;font-weight:600;cursor:pointer}
+button:hover{background:#3b82f6}
+#error{min-height:24px;margin:12px 0 0;color:#fecaca}
+</style>
+</head>
+<body>
+<main class="login-card">
+<h1>❤️ Secret Entrance ❤️</h1>
+<p>Enter our password to open the memories.</p>
+<form id="passwordForm">
+<input type="password" id="password" placeholder="Enter password" autocomplete="current-password" autofocus required>
+<button type="submit">Unlock ❤️</button>
+</form>
+<div id="error" role="alert" aria-live="polite"></div>
+</main>
+<script>
+const correctPassword = "Sutii"; // Replace with your desired password
+const passwordForm = document.getElementById("passwordForm");
+const passwordInput = document.getElementById("password");
+const errorMessage = document.getElementById("error");
+
+passwordForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    if(passwordInput.value === correctPassword){
+        window.location.href = "Anniversaryedit.html";
+    }else{
+        errorMessage.textContent = "Wrong password ❤️ Please try again.";
+        passwordInput.value = "";
+        passwordInput.focus();
+    }
+});
+</script>
+</body>
+</html>
